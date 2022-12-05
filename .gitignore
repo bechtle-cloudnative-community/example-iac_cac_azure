@@ -1,0 +1,7 @@
+creds.*
+variables.tf
+.terraform/
+.terraform.*
+terraform.*
+*.jpg
+*.png

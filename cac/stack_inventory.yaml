@@ -1,0 +1,32 @@
+all:
+  vars:
+    vm_mgmt_user: ubuntu
+    app_dir_path: /app
+  
+  hosts:
+    stack_vm_1:
+      ansible_host: 1.2.3.4
+      ansible_port: 22
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    stack_vm_2:
+      ansible_host: 1.2.3.4
+      ansible_port: 22
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    # stack_vm_3:
+    #   ansible_host: 1.2.3.4
+    #   ansible_port: 22
+    #   ansible_user: ubuntu
+    #   ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+  children:
+    stack:
+      hosts:
+        stack_vm_1:
+        stack_vm_2:
+        # stack_vm_3:
+       
+

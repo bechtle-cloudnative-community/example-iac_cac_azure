@@ -1,0 +1,25 @@
+#Rename this file into 'variables.tf' and fill in your credential data
+
+variable "ARM_TENANT_ID" {
+  type        = string
+  default     = "PLEASE FILL IN YOUR VALUE"
+}
+
+variable "ARM_SUBSCRIPTION_ID" {
+  type        = string
+  default     = "PLEASE FILL IN YOUR VALUE" 
+}
+
+#---------------
+
+variable "ARM_CLIENT_ID" {
+  type        = string
+  default     = "PLEASE FILL IN YOUR VALUE"
+}
+
+variable "ARM_CLIENT_SECRET" {
+  type        = string
+  default     = "PLEASE FILL IN YOUR VALUE"
+}
+
+

@@ -1,0 +1,11 @@
+[Unit]
+Description=Demo Web App
+
+[Service]
+User=ubuntu
+WorkingDirectory={{app_dir_path}}
+ExecStart=/usr/bin/python3 {{app_dir_path}}/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
